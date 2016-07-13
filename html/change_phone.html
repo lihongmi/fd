@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>富德产险</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="../css/new_base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+
+</head>
+<body>
+<div class="person_wrap">
+    <header class="person_top">
+        <ul class="clearfix">
+            <li>
+                <div class="person_photo">
+                    <img src="../img/my_photo.png" alt="my">
+                </div>
+                <div class="person_name">
+                    <p>富德富德</p>
+                    <p class="staff">员工</p>
+
+                </div>
+            </li>
+            <li>
+                <a href="#" class="bind">解绑&nbsp;></a>
+            </li>
+        </ul>
+    </header>
+    <div class="staff_phone" id="staff_phone">
+        <p class="clearfix"><span class="add_class"><i>新手机号码</i><i><input type="text" placeholder="请输入手机号码" name="staff_phone" value=""></i></span></p>
+        <p class="clearfix"><span class="add_class"><i>验证码</i><i><input type="text" placeholder="请输入验证码" name="sms" value=""></i></span><span id="send_sms">发送验证码</span></p>
+        <p class="clearfix"><span>提交资料</span></p>
+    </div>
+</div>
+<script>
+    var staff_phone=document.getElementById("staff_phone");
+    var oSpan=staff_phone.getElementsByTagName("span");
+    var send_sms=document.getElementById("send_sms");
+    var num=30;
+    for(var i=0;i<oSpan.length;i++){
+        oSpan[i].index = i;
+        oSpan[i].onclick = function () {
+            for (var i = 0; i < oSpan.length; i++) {
+                oSpan[i].className = "add_class";
+            }
+            oSpan[this.index].className = "change_class";
+        };
+    }
+    send_sms.onclick=function(){
+        if(num>0){
+            var aid=setInterval(function(){
+                send_sms.innerHTML=num;
+                num--;
+                send_sms.style.backgroundColor="#808080";
+                if(num<0){
+                    clearInterval(aid);
+                    send_sms.style.backgroundColor="#da010a";
+                    send_sms.innerHTML="发送验证码";
+                    num=30;
+                }
+            },1000);
+        }else{
+            alert("服务器出错了!")
+        }
+    }
+</script>
+</body>
+</html>

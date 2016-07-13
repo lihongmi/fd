@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>富德产险</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="../css/new_base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+
+</head>
+<body>
+<div class="person_wrap">
+    <header class="person_top">
+        <ul class="clearfix">
+            <li>
+                <div class="person_photo">
+                    <img src="../img/my_photo.png" alt="my">
+                </div>
+                <div class="person_name">
+                    <p>富德富德</p>
+                    <p class="high_vip">高级会员</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="work_staff">员工认证&nbsp;></a>
+            </li>
+        </ul>
+    </header>
+    <div class="finish_prove">
+        <p>请输入您的员工号后六位完成员工认证</p>
+        <div class="staff_num clearfix" >
+            <span id="staff_num" class="add_class"><i>员工号</i><i><input type="text" placeholder="请输入员工号" value="" name=""></i></span>
+            <span id="staff_btn">确认</span>
+        </div>
+    </div>
+</div>
+<script>
+    var staff_btn=document.getElementById("staff_btn");
+    var staff_num=document.getElementById("staff_num");
+    staff_num.onclick=function(){
+        staff_num.className="change_class"
+    }
+    staff_btn.onmousedown=function(){
+        staff_btn.style.backgroundColor="#b30208";
+        staff_num.className="add_class"
+    }
+    staff_btn.onmouseup=function(){
+        staff_btn.style.backgroundColor="#da010a";
+    }
+
+</script>
+</body>
+</html>

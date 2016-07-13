@@ -1,0 +1,759 @@
+/*
+person_center
+个人中心
+*/
+.person_wrap,body{
+    background-color:#f3f0f0;
+    height: 100%;
+    overflow: hidden;
+}
+.person_wrap,body{
+    max-width: 720px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.person_top{
+    background-color: #fff;
+}
+.person_top ul li {
+    width:50%;
+    float: left;
+}
+.person_top ul li .person_photo{
+    float: left;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+}
+.person_top ul li .person_photo img{
+    width: 100%;
+    height: 100%;
+}
+.person_top ul li .person_name{
+    float: left;
+    width: 50%;
+}
+.person_top ul li .person_name p:nth-child(1){
+    padding-top: 15px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.6rem;
+    color: #666666;
+}
+.person_top ul li .person_name p:nth-child(2){
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.2rem;
+
+}
+
+.person_top ul li .person_name .staff{
+    font-size: 1rem;
+    color: #6ba4ff;
+}
+
+.person_top ul li:nth-child(2) .bind{
+    float: right;
+    padding-right: 40px;
+    color: #8e8e93;
+    font-size: 1.2rem;
+    height: 80px;
+    line-height: 80px;
+}
+
+.person_staff{
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 100%;
+    font-size: 1.4rem;
+}
+.person_staff .name{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: dashed 1px #cccccc;
+
+}
+.person_staff .name span:nth-child(1){
+    width: 20%;
+    color: #4d4d4d;
+    font-size: 1.4rem;
+    float: left;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.person_staff .name span:nth-child(2){
+    width: 60%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color:#cccccc;
+}
+.person_staff .id_card{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: dashed 1px #cccccc;
+}
+.person_staff .id_card span:nth-child(1){
+    width: 20%;
+    color: #4d4d4d;
+    font-size: 1.4rem;
+    float: left;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.person_staff .id_card span:nth-child(2){
+    width: 60%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: #cccccc;
+}
+
+.person_staff .phone_num{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: dashed 1px #cccccc;
+}
+.person_staff .phone_num span:nth-child(1){
+    width: 20%;
+    color: #4d4d4d;
+    font-size: 1.4rem;
+    float: left;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.person_staff .phone_num span:nth-child(2){
+    width: 35%;
+    float: left;
+    color: #cccccc;
+}
+.person_staff .phone_num a {
+    color:#007aff;
+    font-size: 1rem;
+    vertical-align: middle;
+
+    float: left;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.person_staff .work_num{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: dashed 1px #cccccc;
+}
+.person_staff .work_num span:nth-child(1){
+    width: 20%;
+    color: #4d4d4d;
+    font-size: 1.4rem;
+    float: left;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.person_staff .work_num span:nth-child(2){
+    width: 40%;
+    float: left;
+    color: #cccccc;
+}
+.person_staff .work_team{
+    height: 50px;
+    line-height: 50px;
+}
+.person_staff .work_team span:nth-child(1){
+    width: 20%;
+    color: #4d4d4d;
+    font-size: 1.4rem;
+    float: left;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.person_staff .work_team span:nth-child(2){
+    width: 40%;
+    float: left;
+    color: #cccccc;
+}
+/*
+解绑
+staff_binding
+*/
+.staff_bind{
+    margin-top: 30px;
+    margin-bottom: 100%;
+    background-color: #fff;
+}
+.staff_bind p{
+    height: 60px;
+    line-height: 60px;
+    color:#4c4c4c ;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.staff_bind span{
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.staff_bind a{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    background-color: #da010a;
+    display: inline-block;
+    border-radius: 3px;
+}
+/**************
+更换手机
+change_phone
+*****************/
+.staff_phone{
+    background-color: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 30px auto 100%;
+}
+.staff_phone p:nth-child(1){
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+
+}
+.staff_phone p:nth-child(1) span:nth-child(1){
+    float: left;
+    width: 100%;
+
+}
+.staff_phone p:nth-child(1) span:nth-child(1) i:nth-child(1){
+    float: left;
+    width: 80px;
+    color: #4d4d4d;
+    padding-left: 5px;
+    font-size: 1.4rem;
+}
+.staff_phone p:nth-child(1) span:nth-child(1) i:nth-child(2){
+    float: left;
+    width: 65%;
+}
+.staff_phone p:nth-child(1) span:nth-child(1) i input{
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.4rem;
+    vertical-align: middle;
+    border: none;
+}
+.staff_phone p:nth-child(2){
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 0;
+}
+.staff_phone p:nth-child(2) span:nth-child(1){
+    width: 70%;
+    float: left;
+}
+.staff_phone p:nth-child(2) span:nth-child(1) i:nth-child(1){
+    float: left;
+    width: 80px;
+    font-size: 1.4rem;
+    padding-left: 5px ;
+}
+.staff_phone p:nth-child(2) span:nth-child(1) i:nth-child(2){
+    float: left;
+    width: 55%;
+}
+.staff_phone p:nth-child(2) span:nth-child(1) i:nth-child(2) input{
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.4rem;
+    border:  none;
+    vertical-align: middle;
+}
+.staff_phone p:nth-child(2) span:nth-child(2){
+    float: right;
+    width: 26%;
+    background-color: #da010a;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 3px;
+}
+.staff_phone p:nth-child(3){
+    width: 90%;
+    margin: 0 auto;
+}
+.staff_phone p:nth-child(3) span{
+    width: 100%;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #da010a;
+    font-size: 1.4rem;
+    color: #fff;
+    border-radius: 3px;
+}
+/***********
+普通会员_升级VIP
+change_vip
+*************/
+.person_top .person_name .common_vip{
+    color: #8e8e93;
+    font-size: 1rem;
+}
+.person_top .change_vip{
+    color: #ffe18d;
+    float: right;
+    padding-right: 40px;
+    font-size: 1rem;
+    height: 80px;
+    line-height: 80px;
+}
+.upgrade_vip {
+    margin: 30px auto 100%;
+    background-color: #fff;
+}
+.upgrade_vip p:nth-child(1){
+    font-size: 1.2rem;
+    height: 40px;
+    line-height: 40px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.upgrade_vip p:nth-child(2){
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.upgrade_vip p:nth-child(2) span{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #da010a;
+    color: #fff;
+    float: left;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+/*
+    fill_vip
+    填写升级会员的资料
+*/
+.fill_vip{
+    background-color: #fff;
+    margin: 30px auto 100%;
+}
+.fill_vip .name{
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.fill_vip .name span:nth-child(1){
+    width: 100%;
+    float: left;
+    font-size: 1.4rem;
+
+
+}
+.fill_vip .name span:nth-child(1) i:nth-child(1){
+    width: 60px;
+    float: left;
+    font-size: 1.4rem;
+    color: #4d4d4d;
+    padding-left: 10px;
+}
+.fill_vip .name span:nth-child(1) i:nth-child(2){
+    width: 70%;
+    float: left;
+}
+.fill_vip .name span:nth-child(1) i input{
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+.fill_vip .id_card{
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.fill_vip .id_card span:nth-child(1){
+    width: 100%;
+    float: left;
+    font-size: 1.4rem;
+
+}
+.fill_vip .id_card span:nth-child(1) i:nth-child(1){
+    width: 60px;
+    float: left;
+    font-size: 1.4rem;
+    color: #4d4d4d;
+    padding-left: 10px;
+}
+.fill_vip .id_card span:nth-child(1) i:nth-child(2){
+    width: 70%;
+    float: left;
+}
+.fill_vip .id_card span:nth-child(1) i input{
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+.fill_vip .phone_num{
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.fill_vip .phone_num span:nth-child(1){
+    width: 100%;
+    float: left;
+    font-size: 1.4rem;
+
+}
+.fill_vip .phone_num span:nth-child(1) i:nth-child(1){
+    width: 60px;
+    float: left;
+    font-size: 1.4rem;
+    color: #4d4d4d;
+    padding-left: 10px;
+}
+.fill_vip .phone_num span:nth-child(1) i:nth-child(2){
+    width: 70%;
+    float: left;
+}
+.fill_vip .phone_num span:nth-child(1) i input{
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+.fill_vip .sms{
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.fill_vip .sms span:nth-child(1){
+    width: 70%;
+    float: left;
+    font-size: 1.4rem;
+
+}
+.fill_vip .sms span:nth-child(1) i:nth-child(1){
+    width: 60px;
+    float: left;
+    font-size: 1.4rem;
+    color: #4d4d4d;
+    padding-left: 10px;
+}
+.fill_vip .sms span:nth-child(1) i:nth-child(2){
+    width: 50%;
+    float: left;
+}
+.fill_vip .sms span:nth-child(1) i input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+}
+.fill_vip .sms span:nth-child(2){
+    float: right;
+    width: 25%;
+    background-color:#da010a;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 3px;
+}
+.fill_vip .sms span:nth-child(2) input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    color: #fff;
+}
+.fill_vip .submit{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.fill_vip .submit span{
+    width: 100%;
+    background-color:#da010a;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    font-size: 1.4rem;
+    border-radius: 3px;
+}
+
+.add_class{
+    -webkit-box-shadow: 0px 0px 6px 3px #eeeeee;
+    -moz-box-shadow: 0px 0px 6px 3px #eeeeee;
+    box-shadow: 0px 0px 6px 3px #eeeeee;
+}
+.change_class{
+    -webkit-box-shadow: 0px 0px 6px 3px #fadcdd;
+    -moz-box-shadow: 0px 0px 6px 3px #fadcdd;
+    box-shadow: 0px 0px 6px 3px #fadcdd;
+}
+/*
+    high_vip
+    高级会员
+*/
+.person_top .high_vip{
+    color: #ffba35;
+    font-size: 1rem;
+}
+.person_top .work_staff{
+    color: #007aff;
+    float: right;
+    padding-right: 40px;
+    font-size: 1.2rem;
+    height: 80px;
+    line-height: 80px;
+}
+.fill_high_vip .phone_num{
+    border: none;
+}
+/*
+finish_prove
+输入员工号
+*/
+.finish_prove{
+    width: 100%;
+    margin: 30px auto 100%;
+    background-color: #fff;
+}
+.finish_prove p{
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color: #8a8a8a;
+}
+.finish_prove .staff_num{
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.finish_prove .staff_num span:nth-child(1){
+
+    width: 70%;
+    float: left;
+}
+.finish_prove .staff_num span:nth-child(1) i:nth-child(1){
+    font-size: 1.4rem;
+    color: #4d4d4d;
+    padding-left: 10px;
+    width: 50px;
+    float: left;
+}
+.finish_prove .staff_num span:nth-child(1) i:nth-child(2){
+    width: 60%;
+    float: left;
+}
+.finish_prove .staff_num span:nth-child(1) i:nth-child(2) input{
+    width: 100%;
+    background: transparent;
+    vertical-align: middle;
+    border: none;
+    font-size: 1.4rem;
+}
+.finish_prove .staff_num span:nth-child(2){
+    background: #da010a;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    width: 25%;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 3px;
+}
+/*
+我的积分
+my_jifen
+*/
+.my_jifen{
+    background-color: #fff;
+    margin: 30px auto 100%;
+}
+.my_jifen p{
+    width: 90%;
+    margin: 0 auto;
+}
+.my_jifen p span:nth-child(1){
+    background: url("../img/jifen_icon.png")no-repeat center center;
+    width: 40px;
+    height: 40px;
+    background-size: 20px;
+    float: left;
+}
+.my_jifen p span:nth-child(2){
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-size: 1.4rem;
+    color: #333333;
+}
+.my_jifen p a{
+    float: right;
+    background: url("../img/arr_icon.png")no-repeat center center;
+    width:  20px;
+    height: 40px;
+    background-size: 20px;
+}
+
+/*
+exchange_jifen
+积分兑换
+*/
+.exchange_bg{
+    background: url("../img/exchange_bg.gif")no-repeat center center;
+    height: 180px;
+    width: 100%;
+    background-size:100% 100%;
+}
+.exchange_bg .exchange_top{
+    width: 70%;
+    margin: 0 auto;
+}
+.exchange_bg .exchange_top p:nth-child(1){
+    height: 30px;
+    line-height: 30px;
+    font-size:1.6rem;
+    color: #f9d5b9;
+    padding-top: 30px;
+}
+.exchange_bg .exchange_top h1{
+    height: 50px;
+    line-height: 50px;
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+.exchange_middle{
+    background-color: #fff;
+}
+.exchange_middle ul{
+    position: relative;
+}
+.exchange_middle ul li{
+    width: 50%;
+    float: left;
+}
+.exchange_middle ul li p:nth-child(1){
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    color: #999999;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding-top: 10px;
+
+}
+.exchange_middle ul li p:nth-child(2){
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    color: #666666;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.exchange_middle ul li .jifen_line{
+    width: 0;
+    height: 60px;
+    border-right: 1px solid #7e807f;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 50%;
+}
+.exchange_btn{
+    width:90%;
+    margin: 30px auto;
+}
+.exchange_btn p{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #da010a;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.pop{
+    height: 100%;
+    overflow: hidden;
+    background-color: #797878;
+    opacity: 0.6;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pop_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    width: 250px;
+    margin-left: -125px;
+    margin-top: -60px;
+    border-radius: 3px;
+}
+.pop_text p:nth-child(1){
+    padding-top: 20px;
+    line-height: 20px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    color:#232323;
+    padding-bottom: 20px;
+}
+.pop_text a:nth-child(2){
+    float: left;
+    width: 20%;
+    color: #39b638;
+    font-size: 1.4rem;
+    padding-left: 15%;
+    padding-bottom: 20px;
+}
+.pop_text a:nth-child(3){
+    float: right;
+    width: 20%;
+    color: #39b638;
+    font-size: 1.4rem;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}

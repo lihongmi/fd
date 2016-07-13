@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>富德产检</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="../css/new_base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+<div class="person_wrap">
+    <header class="person_top">
+        <ul class="clearfix">
+            <li>
+                <div class="person_photo">
+                    <img src="../img/my_photo.png" alt="my">
+                </div>
+                <div class="person_name">
+                    <p>富德富德</p>
+                    <p class="common_vip">普通用户</p>
+                </div>
+            </li>
+            <li>
+            </li>
+        </ul>
+    </header>
+    <div class="fill_vip" id="fill_vip">
+        <div class="name clearfix"><span class="add_class"><i>姓名</i><i><input type="text" placeholder="请输入您的姓名" value=""
+                                                                              name=""></i></span></div>
+        <div class="id_card"><span class="add_class"><i>身份证</i><i><input type="text" placeholder="请输入身份证" value=""
+                                                                         name=""></i></span></div>
+        <div class="phone_num"><span class="add_class"><i>手机号</i><i><input type="text" placeholder="请输入手机号码" value=""
+                                                                           name=""></i></span></div>
+        <div class="sms"><span class="add_class"><i>验证码</i><i><input type="text" placeholder="请输入验证码" value="" name=""></i></span><span><input  type="button" value="发送验证码" id="sms"></span>
+        </div>
+        <div class="submit clearfix"><span>提交资料</span></div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var fill_vip = document.getElementById("fill_vip");
+        var oSpan = fill_vip.getElementsByTagName("span");
+        var sms=document.getElementById("sms");
+        var num=5;
+        for (var i = 0; i < oSpan.length; i++) {
+            oSpan[i].index = i;
+            oSpan[i].onclick = function () {
+                for (var i = 0; i < oSpan.length; i++) {
+                    oSpan[i].className = "add_class";
+                }
+                oSpan[this.index].className = "change_class";
+            };
+            sms.onclick=function(){
+                if(num>0){
+                    var aid=setInterval(function(){
+                        sms.disabled=true;
+                        sms.value=num;
+                        num--;
+                        oSpan[4].style.backgroundColor="#808080";
+                        if(num+1==0){
+                            clearInterval(aid);
+                            oSpan[4].style.backgroundColor="#da010a";
+                            sms.value="发送验证码";
+                            num=5;
+                            sms.disabled=false;
+                        }
+                    },1000);
+                }else{
+                    alert("服务器出错")
+                }
+
+            }
+
+        }
+    }
+</script>
+</body>
+</html>

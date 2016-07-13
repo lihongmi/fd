@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>富德产险</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="../css/new_base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+<div class="exchange_bg">
+    <div class="exchange_top">
+        <p>积分总额</p>
+        <h1>50，000</h1>
+    </div>
+</div>
+<div class="exchange_middle">
+    <ul class="clearfix">
+        <li>
+            <p>推广积分</p>
+            <p>25，000</p>
+            <p class="jifen_line"></p>
+        </li>
+        <li>
+            <p>销售积分</p>
+            <p>25，000</p>
+        </li>
+    </ul>
+</div>
+<div class="exchange_btn" id="exchange_btn">
+    <p id="exchange_btn_color">全部兑换</p>
+</div>
+<div class="pop" id="pop" style="display: none">
+</div>
+<div class="pop_text" id="pop_text" style="display: none">
+    <p>普通用户无法兑换积分，请完成高级会员认证。</p>
+    <a>认证</a>
+    <a>稍后</a>
+</div>
+<script>
+    var btn=document.getElementById("exchange_btn");
+    var btn_color=document.getElementById("exchange_btn_color");
+    var pop=document.getElementById("pop");
+    var pop_text=document.getElementById("pop_text");
+    btn.onclick=function(){
+        pop.style.display="block";
+        pop_text.style.display="block";
+    }
+    btn.onmouseup=function(){
+        btn_color.style.backgroundColor="#da010a"
+    }
+    btn.onmousedown=function(){
+        btn_color.style.backgroundColor="#b30208"
+    }
+</script>
+
+</body>
+</html>
